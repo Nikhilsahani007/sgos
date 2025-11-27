@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Poster theme + layout */
+@layer base {
+  body {
+    @apply bg-sg-cream text-sg-blue-dark overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply min-h-screen bg-gradient-to-b from-sg-cream via-white to-sg-cream;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-extrabold text-center text-sg-blue-dark tracking-wide;
+  }
+
+  .card-poster {
+    @apply bg-white rounded-3xl border border-sg-gold/60 shadow-poster;
+  }
+
+  .pill-label {
+    @apply inline-block px-4 py-1 rounded-full text-xs font-semibold bg-sg-blue text-sg-cream;
+  }
+}
+
+@layer utilities {
+  .shadow-poster {
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+  }
+}

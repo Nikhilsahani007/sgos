@@ -1,0 +1,47 @@
+/*
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+color: white;
+background: #001f3f;
+}
+.header {
+padding: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: rgba(0, 0, 0, 0.4);
+position: sticky;
+top: 0;
+backdrop-filter: blur(10px);
+}
+.nav a {
+margin-left: 20px;
+color: white;
+text-decoration: none;
+}
+.hero {
+padding: 150px 20px;
+text-align: center;
+}
+.btn {
+background: yellow;
+padding: 12px 20px;
+border-radius: 8px;
+color: black;
+font-weight: bold;
+text-decoration: none;
+}
+.about-section, .branches-section, .results-section {
+padding: 80px 20px;
+background: rgba(255, 255, 255, 0.1);
+margin: 20px;
+border-radius: 10px;
+}
+.branch-card {
+background: rgba(255, 255, 255, 0.2);
+padding: 15px;
+border-radius: 10px;
+margin-bottom: 10px;
+}
+*/
