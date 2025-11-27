@@ -28,10 +28,10 @@ export default function Home() {
       <section className="grid md:grid-cols-[1.6fr,1.2fr] gap-10 items-center">
         <div>
           <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sg-blue-dark/70 mb-2">
-            Since 1991 • Vanasthalipuram
+            Since 1984 • Vanasthalipuram
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold text-sg-blue-dark leading-tight mb-4">
-            Siddartha Group of Schools
+            Siddhartha Group of Schools
           </h1>
           <p className="text-lg text-sg-blue-dark/80 mb-6">
             A trusted institution for{" "}
@@ -63,7 +63,7 @@ export default function Home() {
           <div className="relative rounded-3xl overflow-hidden shadow-poster border-4 border-sg-gold/80">
             <img
               src={campusMain}
-              alt="Siddartha school main campus"
+              alt="Siddhartha school main campus"
               className="w-full h-64 object-cover"
             />
           </div>
@@ -110,12 +110,12 @@ export default function Home() {
         </h2>
         <div className="grid md:grid-cols-3 gap-4 text-sm text-sg-blue-dark/90">
           <div>
-            <h3 className="font-semibold">Siddartha High School</h3>
+            <h3 className="font-semibold">Siddhartha High School</h3>
             <p>Near Ganesh Temple, Vanasthalipuram</p>
             <p>Ph: 7780197872</p>
           </div>
           <div>
-            <h3 className="font-semibold">Siddartha Model High School</h3>
+            <h3 className="font-semibold">Siddhartha Model High School</h3>
             <p>Kamala Nagar, Vanasthalipuram</p>
             <p>Ph: 8309863928</p>
           </div>

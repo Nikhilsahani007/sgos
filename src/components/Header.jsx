@@ -27,12 +27,12 @@ export default function Header() {
         <Link to="/" className="flex items-center gap-3" onClick={closeAll}>
           <img
             src={logo}
-            alt="Siddartha Group of Schools logo"
+            alt="Siddhartha Group of Schools logo"
             className="h-10 w-10 rounded-full border-2 border-sg-gold bg-white object-cover"
           />
           <div className="leading-tight">
             <div className="text-lg md:text-xl font-extrabold tracking-wide">
-              Siddartha Group of Schools
+              Siddhartha Group of Schools
             </div>
             <div className="text-xs md:text-sm text-sg-cream/80">
               Holistic Student Development
