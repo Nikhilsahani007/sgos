@@ -1,0 +1,71 @@
+# ============================
+# Node & npm
+# ============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+
+# ============================
+# Environment Variables
+# ============================
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ============================
+# Logs
+# ============================
+logs/
+*.log
+*.log.*
+
+# ============================
+# Build Output (Frontend)
+# ============================
+dist/
+build/
+.cache/
+.vite/
+
+# ============================
+# Build Output (Backend)
+# ============================
+/server/build/
+server/dist/
+server/logs/
+
+# ============================
+# OS Files
+# ============================
+.DS_Store
+Thumbs.db
+
+# ============================
+# VS Code
+# ============================
+.vscode/
+*.code-workspace
+
+# ============================
+# Temporary Files
+# ============================
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# ============================
+# Coverage
+# ============================
+coverage/
+
+# ============================
+# Production Uploads (optional)
+# Uncomment if user uploads stored locally
+# uploads/
