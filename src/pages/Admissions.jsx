@@ -93,9 +93,9 @@ export default function Admissions() {
               ].map((item) => (
                 <div
                   key={item}
-                  className="bg-white rounded-2xl border border-sg-gold/60 px-3 py-2 text-center shadow-sm"
+                  className="bg-sg-blue text-sg-cream rounded-2xl px-3 py-2 text-center shadow-poster"
                 >
-                  <p className="font-semibold text-sg-blue">{item}</p>
+                  <p className="font-semibold">{item}</p>
                 </div>
               ))}
             </div>
@@ -103,116 +103,127 @@ export default function Admissions() {
         </div>
 
         {/* Enquiry Form */}
-        <div className="max-w-4xl mx-auto">
-          <h2 className="section-title mb-6">Admission Enquiry Form</h2>
+       <div className="max-w-4xl mx-auto">
+  <h2 className="section-title mb-6">Admission Enquiry Form</h2>
 
-          <form
-            onSubmit={handleSubmit}
-            className="bg-white/95 rounded-3xl border border-slate-200 p-6 md:p-8 space-y-5 shadow-poster"
-          >
-            <div className="grid md:grid-cols-2 gap-4">
+  <form
+    onSubmit={handleSubmit}
+    className="bg-white/95 rounded-3xl border border-slate-200 p-6 md:p-8 space-y-6 shadow-poster"
+  >
+    {/* Grid Fields */}
+    <div className="grid md:grid-cols-2 gap-6">
 
-              <div>
-                <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
-                  Student Name *
-                </label>
-                <input
-                  name="studentName"
-                  value={form.studentName}
-                  onChange={handleChange}
-                  className="w-full rounded-xl border border-slate-300 px-3 py-2"
-                  placeholder="Enter student full name"
-                  required
-                />
-              </div>
+      {/* Student Name */}
+      <div>
+        <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
+          Student Name *
+        </label>
+        <input
+          name="studentName"
+          value={form.studentName}
+          onChange={handleChange}
+          className="w-full rounded-xl border border-slate-300 px-3 py-2 text-black focus:ring-2 focus:ring-sg-blue focus:outline-none"
+          placeholder="Enter student full name"
+          required
+        />
+      </div>
 
-              <div>
-                <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
-                  Parent / Guardian Name *
-                </label>
-                <input
-                  name="parentName"
-                  value={form.parentName}
-                  onChange={handleChange}
-                  className="w-full rounded-xl border border-slate-300 px-3 py-2"
-                  placeholder="Enter parent or guardian name"
-                  required
-                />
-              </div>
+      {/* Parent Name */}
+      <div>
+        <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
+          Parent / Guardian Name *
+        </label>
+        <input
+          name="parentName"
+          value={form.parentName}
+          onChange={handleChange}
+          className="w-full rounded-xl border border-slate-300 px-3 py-2 text-black focus:ring-2 focus:ring-sg-blue focus:outline-none"
+          placeholder="Enter parent or guardian name"
+          required
+        />
+      </div>
 
-              <div>
-                <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
-                  Phone Number *
-                </label>
-                <input
-                  name="phone"
-                  value={form.phone}
-                  onChange={handleChange}
-                  className="w-full rounded-xl border border-slate-300 px-3 py-2"
-                  placeholder="Mobile number"
-                  required
-                />
-              </div>
+      {/* Phone */}
+      <div>
+        <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
+          Phone Number *
+        </label>
+        <input
+          name="phone"
+          value={form.phone}
+          onChange={handleChange}
+          className="w-full rounded-xl border border-slate-300 px-3 py-2 text-black focus:ring-2 focus:ring-sg-blue focus:outline-none"
+          placeholder="Mobile number"
+          required
+        />
+      </div>
 
-              <div>
-                <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
-                  Email
-                </label>
-                <input
-                  name="email"
-                  type="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  className="w-full rounded-xl border border-slate-300 px-3 py-2"
-                  placeholder="Email for communication (optional)"
-                />
-              </div>
+      {/* Email */}
+      <div>
+        <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
+          Email
+        </label>
+        <input
+          name="email"
+          type="email"
+          value={form.email}
+          onChange={handleChange}
+          className="w-full rounded-xl border border-slate-300 px-3 py-2 text-black focus:ring-2 focus:ring-sg-blue focus:outline-none"
+          placeholder="Email for communication (optional)"
+        />
+      </div>
 
-              <div>
-                <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
-                  Applying for Class *
-                </label>
-                <input
-                  name="grade"
-                  value={form.grade}
-                  onChange={handleChange}
-                  className="w-full rounded-xl border border-slate-300 px-3 py-2"
-                  placeholder="e.g., Grade 3 / 7 / 10"
-                  required
-                />
-              </div>
-            </div>
+      {/* Applying for Class */}
+      <div>
+        <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
+          Applying for Class *
+        </label>
+        <input
+          name="grade"
+          value={form.grade}
+          onChange={handleChange}
+          className="w-full rounded-xl border border-slate-300 px-3 py-2 text-black focus:ring-2 focus:ring-sg-blue focus:outline-none"
+          placeholder="e.g., Grade 3 / 7 / 10"
+          required
+        />
+      </div>
 
-            <div>
-              <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
-                Message / Questions
-              </label>
-              <textarea
-                name="message"
-                rows={4}
-                value={form.message}
-                onChange={handleChange}
-                className="w-full rounded-xl border border-slate-300 px-3 py-2"
-                placeholder="Share any specific details about the child or your admission query..."
-              />
-            </div>
+    </div>
 
-            <button
-              type="submit"
-              disabled={status.loading}
-              className="mt-2 inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-sg-blue text-sg-cream font-semibold shadow-poster hover:brightness-110 disabled:opacity-60"
-            >
-              {status.loading ? "Submitting..." : "Submit Enquiry"}
-            </button>
+    {/* Message Input */}
+    <div>
+      <label className="block text-sm font-semibold mb-1 text-sg-blue-dark">
+        Message / Questions
+      </label>
+      <textarea
+        name="message"
+        rows={4}
+        value={form.message}
+        onChange={handleChange}
+        className="w-full rounded-xl border border-slate-300 px-3 py-2 text-black focus:ring-2 focus:ring-sg-blue focus:outline-none"
+        placeholder="Share any specific details about the child or your admission query..."
+      />
+    </div>
 
-            {status.success && (
-              <p className="mt-3 text-sm text-green-600">{status.success}</p>
-            )}
-            {status.error && (
-              <p className="mt-3 text-sm text-red-600">{status.error}</p>
-            )}
-          </form>
-        </div>
+    {/* Submit Button */}
+    <button
+      type="submit"
+      disabled={status.loading}
+      className="mt-2 inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-sg-blue text-sg-cream font-semibold shadow-poster hover:brightness-110 disabled:opacity-60"
+    >
+      {status.loading ? "Submitting..." : "Submit Enquiry"}
+    </button>
+
+    {/* Status Messages */}
+    {status.success && (
+      <p className="mt-3 text-sm text-green-600">{status.success}</p>
+    )}
+    {status.error && (
+      <p className="mt-3 text-sm text-red-600">{status.error}</p>
+    )}
+  </form>
+</div>
+
       </div>
     </section>
   );

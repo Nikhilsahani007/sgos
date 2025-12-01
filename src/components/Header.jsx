@@ -170,6 +170,14 @@ export default function Header() {
             >
               Gallery
             </NavLink>
+<NavLink
+  to="/news"
+  className={({ isActive }) =>
+    `${navLinkBase} ${isActive ? "text-sg-gold" : ""}`
+  }
+>
+  News & Updates
+</NavLink>
 
             <NavLink
               to="/contact"

@@ -3,17 +3,17 @@ const staff = [
   {
     name: "Mr. K. Indra Reddy",
     role: "Chairman",
-    img: "/staff/indra.jpg",
+    img: "/staff/Chairman.jpg",
   },
   {
     name: "Mrs. K. Naga Laxmi",
     role: "Vice Chairperson",
-    img: "/staff/nagalaxmi.jpg",
+    img: "/staff/Vice Chairperson.jpg",
   },
   {
     name: "S. Nagarjuna Reddy",
     role: "Director",
-    img: "/staff/nagarjuna.jpg",
+    img: "/staff/Director.jpg",
   },
 ];
 

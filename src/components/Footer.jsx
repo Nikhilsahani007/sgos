@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
           <h3 className="font-bold text-lg mb-2">Siddartha Group of Schools</h3>
           <p className="text-sg-cream/80">
-            Since 1991, delivering strong academics, values, and holistic
+            Since 1984, delivering strong academics, values, and holistic
             development for every child.
           </p>
         </div>
